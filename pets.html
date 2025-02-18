@@ -99,34 +99,41 @@
   <head>
       <meta charset="UTF-8">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <title>Pets, Rivers, and Cities Table - Chilipi</title>
+      <title>Pets, Rivers, and Cities - Chilipi</title>
       <!-- Bootstrap CSS -->
       <link href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/css/bootstrap.min.css" rel="stylesheet">
       <style>
-          /* Custom styling for the table */
+          /* Custom Styling */
           table {
-              margin-top: 30px;
-              border-collapse: collapse;
-              width: 100%;
+              margin-top: 20px;
+              border: 2px solid #dee2e6;
           }
+  
           th, td {
-              padding: 15px;
               text-align: center;
+              padding: 15px;
           }
+  
           th {
-              background-color: #4CAF50;
+              background-color: #007bff;
               color: white;
+              font-size: 18px;
           }
-          tr:nth-child(even) {
-              background-color: #f2f2f2;
+  
+          td {
+              background-color: #f8f9fa;
           }
-          tr:hover {
-              background-color: #ddd;
-          }
+  
           caption {
-              font-size: 1.5rem;
+              font-size: 24px;
               font-weight: bold;
-              margin-bottom: 20px;
+              margin-bottom: 15px;
+              color: #343a40;
+          }
+  
+          /* Table Borders */
+          .table-bordered td, .table-bordered th {
+              border: 1px solid #dee2e6;
           }
       </style>
   </head>
@@ -134,7 +141,7 @@
   
   <div class="container mt-4">
       <table class="table table-bordered">
-          <caption>Pets, Rivers, and Cities Table</caption>
+          <caption>Pets, Rivers, and Cities</caption>
           <thead>
               <tr>
                   <th scope="col">Letter</th>
