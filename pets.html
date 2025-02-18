@@ -99,41 +99,38 @@
   <head>
       <meta charset="UTF-8">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <title>Pets, Rivers, and Cities - Chilipi</title>
+      <title>Pets, Rivers, and Cities Table - Chilipi</title>
       <!-- Bootstrap CSS -->
       <link href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/css/bootstrap.min.css" rel="stylesheet">
       <style>
-          /* Custom Styling */
+          /* Custom styling for the table */
           table {
-              margin-top: 20px;
-              border: 2px solid #dee2e6;
+              margin-top: 30px;
+              border-collapse: collapse;
+              width: 100%;
+              box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adds shadow to the table */
+              border-radius: 8px; /* Rounded corners */
+              background-color: #f9f9f9; /* Light background for the table */
           }
-  
           th, td {
-              text-align: center;
               padding: 15px;
+              text-align: center;
+              border: 1px solid #ddd; /* Subtle border for cells */
           }
-  
           th {
-              background-color: #007bff;
-              color: white;
-              font-size: 18px;
+              background-color: #e2e2e2; /* Light gray background for headers */
+              color: #333; /* Dark color for header text */
           }
-  
-          td {
-              background-color: #f8f9fa;
+          tr:nth-child(even) {
+              background-color: #f2f2f2; /* Light gray for even rows */
           }
-  
+          tr:hover {
+              background-color: #ddd; /* Highlight row on hover */
+          }
           caption {
-              font-size: 24px;
+              font-size: 1.2rem;
               font-weight: bold;
-              margin-bottom: 15px;
-              color: #343a40;
-          }
-  
-          /* Table Borders */
-          .table-bordered td, .table-bordered th {
-              border: 1px solid #dee2e6;
+              margin-bottom: 20px;
           }
       </style>
   </head>
@@ -141,7 +138,7 @@
   
   <div class="container mt-4">
       <table class="table table-bordered">
-          <caption>Pets, Rivers, and Cities</caption>
+          <caption>Pets, Rivers, and Cities Table</caption>
           <thead>
               <tr>
                   <th scope="col">Letter</th>
