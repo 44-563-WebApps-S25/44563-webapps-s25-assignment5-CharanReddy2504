@@ -156,11 +156,21 @@
     <title>Button Groups Example</title>
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        /* Centering the button groups */
+        .btn-toolbar {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 20px; /* Gap between the button groups */
+            margin-top: 20px; /* Margin for spacing from the top */
+        }
+    </style>
 </head>
 <body>
     <div class="container mt-5">
         <!-- Title for Button Groups -->
-        <h1>Button Groups</h1>
+        <h1 class="text-center">Button Groups</h1>
 
         <!-- Button Groups -->
         <div class="btn-toolbar" role="toolbar" aria-label="Button Groups">
@@ -177,7 +187,7 @@
                 <button type="button" class="btn btn-warning">I</button>
             </div>
 
-            <!-- Third Button Group with letters P -->
+            <!-- Third Button Group with letter P -->
             <div class="btn-group" role="group" aria-label="Button Group 3">
                 <button type="button" class="btn btn-danger">P</button>
             </div>
@@ -188,4 +198,3 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
-
